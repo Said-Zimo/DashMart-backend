@@ -1,7 +1,7 @@
 ﻿using DashMart.Application.CurrentUserService;
 using DashMart.Application.Results;
 using DashMart.Domain.People;
-using DashMart.Domain.People.xCustomer;
+using DashMart.Domain.People.Customers;
 using DashMart.Domain.People.Users;
 using DashMart.Domain.UnitOfWorks;
 using FluentValidation;

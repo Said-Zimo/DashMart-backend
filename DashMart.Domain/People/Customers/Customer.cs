@@ -2,11 +2,11 @@
 using DashMart.Domain.People.Persons;
 using DashMart.Domain.Orders;
 
-namespace DashMart.Domain.People.xCustomer
+namespace DashMart.Domain.People.Customers
 {
     public sealed class Customer : Person
     {
-
+        public decimal Balance { get; private set; }
         private readonly List<Order> _orders = new();
 
         public IReadOnlyCollection<Order> Orders => _orders;
@@ -46,6 +46,11 @@ namespace DashMart.Domain.People.xCustomer
 
             if (order == null)
                 throw new DomainException("Order cannot be null");
+
+            if (Balance < order.TotalAmount)
+                throw new DomainException("Amount does not enough");
+
+            Balance -= order.TotalAmount;
 
             _orders.Add(order);
         } 

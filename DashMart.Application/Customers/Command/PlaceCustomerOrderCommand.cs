@@ -1,7 +1,7 @@
 ﻿using DashMart.Application.CurrentUserService;
 using DashMart.Application.Results;
 using DashMart.Domain.People;
-using DashMart.Domain.People.xCustomer;
+using DashMart.Domain.People.Customers;
 using DashMart.Domain.People.Users;
 using DashMart.Domain.Carts;
 using DashMart.Domain.Orders;
@@ -49,7 +49,7 @@ namespace DashMart.Application.Customers.Command
             if(request.Note != null)
                newOrder.SetNote(request.Note);
 
-            foreach ( var item in shippingCart.CartItems)
+            foreach (var item in shippingCart.CartItems)
             {
                 newOrder.AddItem(item.ProductId, item.Quantity,item.Price );
             }

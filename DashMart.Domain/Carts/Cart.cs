@@ -1,7 +1,7 @@
 ﻿
 
 using DashMart.Domain.Abstraction;
-using DashMart.Domain.People.xCustomer;
+using DashMart.Domain.People.Customers;
 
 namespace DashMart.Domain.Carts
 {

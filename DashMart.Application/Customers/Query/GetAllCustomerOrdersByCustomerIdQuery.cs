@@ -6,7 +6,7 @@ using DashMart.Application.Orders.DTOs;
 using DashMart.Application.Orders.Query.Interface;
 using DashMart.Application.Results;
 using DashMart.Domain.People;
-using DashMart.Domain.People.xCustomer;
+using DashMart.Domain.People.Customers;
 using DashMart.Domain.People.Users;
 using MediatR;
 

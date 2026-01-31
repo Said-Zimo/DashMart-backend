@@ -4,6 +4,7 @@ using DashMart.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DashMart.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260131090854_version0.0.3")]
+    partial class version003
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -823,7 +826,7 @@ namespace DashMart.Infrastructure.Migrations
                 {
                     b.HasBaseType("DashMart.Domain.People.Persons.Person");
 
-                    b.Property<decimal>("Balance")
+                    b.Property<decimal>("Amount")
                         .HasColumnType("DECIMAL(18,2)");
 
                     b.ToTable("Customers", (string)null);

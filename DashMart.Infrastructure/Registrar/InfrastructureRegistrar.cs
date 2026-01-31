@@ -11,7 +11,7 @@ using DashMart.Application.Products.Queries.Interface;
 using DashMart.Application.Users.Query.Interface;
 using DashMart.Domain.People.Couriers;
 using DashMart.Domain.People.Couriers.DriverLicenses;
-using DashMart.Domain.People.xCustomer;
+using DashMart.Domain.People.Customers;
 using DashMart.Domain.People.Users;
 using DashMart.Domain.Addresses.Cities;
 using DashMart.Domain.Addresses.Countries;

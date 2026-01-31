@@ -2,7 +2,7 @@
 
 using DashMart.Domain.Abstraction;
 using DashMart.Domain.People.Couriers;
-using DashMart.Domain.People.xCustomer;
+using DashMart.Domain.People.Customers;
 using DashMart.Domain.Addresses.Streets;
 using DashMart.Domain.Validations;
 
@@ -51,6 +51,7 @@ namespace DashMart.Domain.Orders
 
             if (customerId <= 0)
                 throw new DomainException("Customer Id cannot be equal 0 or negative");
+
 
             if (streetId <= 0)
                 throw new DomainException("Street Id cannot be equal 0 or negative");

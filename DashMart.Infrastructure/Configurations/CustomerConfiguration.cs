@@ -1,6 +1,6 @@
 ﻿
 
-using DashMart.Domain.People.xCustomer;
+using DashMart.Domain.People.Customers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -13,6 +13,10 @@ namespace DashMart.Infrastructure.Configurations
         {
 
             builder.ToTable("Customers");
+
+            builder.Property(x => x.Balance)
+                .HasColumnType("DECIMAL(18,2)")
+                .IsRequired();
 
             builder.HasMany(x => x.Orders)
                 .WithOne(x => x.Customer)

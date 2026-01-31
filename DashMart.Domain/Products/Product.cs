@@ -30,8 +30,23 @@ namespace DashMart.Domain.Products
 
             DomainValidation.EnsureValidString(name, 50, "Product Name");
 
-            if (!string.IsNullOrWhiteSpace(description)) DomainValidation.EnsureValidString(description, 500, "Product Description");
-            if (!string.IsNullOrWhiteSpace(howToUseNote)) DomainValidation.EnsureValidString(howToUseNote, 250, "Product how to use note");
+            if (!string.IsNullOrWhiteSpace(description))
+            {
+                DomainValidation.EnsureValidString(description, 500, "Product Description");
+                Description = description;
+            }
+            else
+                Description = null;
+
+            if (!string.IsNullOrWhiteSpace(howToUseNote))
+            {
+                DomainValidation.EnsureValidString(howToUseNote, 250, "Product how to use note");
+                HowToUseNote = howToUseNote;
+            }
+            else
+                howToUseNote = null;
+            
+                
 
             Name = name;
             Description = description;

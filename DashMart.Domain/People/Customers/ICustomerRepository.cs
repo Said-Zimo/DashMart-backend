@@ -1,6 +1,6 @@
 ﻿
 
-namespace DashMart.Domain.People.xCustomer
+namespace DashMart.Domain.People.Customers
 {
     public interface ICustomerRepository
     {

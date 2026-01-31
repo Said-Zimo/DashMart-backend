@@ -4,7 +4,7 @@ using DashMart.Application.Auth;
 using DashMart.Application.PasswordHashing;
 using DashMart.Application.Results;
 using DashMart.Domain.People;
-using DashMart.Domain.People.xCustomer;
+using DashMart.Domain.People.Customers;
 using DashMart.Domain.People.Users;
 using FluentValidation;
 using MediatR;

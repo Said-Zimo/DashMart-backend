@@ -1,6 +1,6 @@
 ﻿
 
-using DashMart.Domain.People.xCustomer;
+using DashMart.Domain.People.Customers;
 using DashMart.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
 

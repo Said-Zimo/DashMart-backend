@@ -1,6 +1,6 @@
 ﻿
 using DashMart.Application.Customers.DTOs;
-using DashMart.Domain.People.xCustomer;
+using DashMart.Domain.People.Customers;
 using DashMart.Domain.People.Persons;
 
 namespace DashMart.Application.Customers.Mapper
